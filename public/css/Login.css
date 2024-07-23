@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    background-color: black !important;
+    font-family: "Poppins", sans-serif;
+  }
+
+.full{
+    background-image: url("bg.png");
+    /* filter: blur(8px); */
+    /* size: 100%; */
+    display: flex;
+    
+    
+}
+
+/* Login page */
+
+.Login{
+    background-image: url("cort.jpg");
+    background-size: cover;
+    background-position: center; /* or other keywords or coordinates */
+    background-repeat: no-repeat;
+    width: 30%;
+    background-color: rgb(140, 140, 14);
+    border-radius: 4%;
+    color: black;   
+    padding: 2% 2%  2%;
+    position: absolute;
+    /* justify-content: center; */
+    /* align-items: center; */
+    top: 20% !important;
+    left: 35% !important;
+}
+
+.Login input{
+    margin-bottom: 5%;
+}
+
+.Login-btn button{
+    margin-bottom: 4%;
+    width: 300px;
+}
+
+.form-label{
+    text-transform: uppercase;
+}
+
+
+.Login-btn label{
+    margin-bottom: 4%;
+}
+
+.sigup button{
+    margin-bottom: 9%;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+
+
+.Signup{
+    align-items: center;
+    width: 40%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    margin: 4% 0% 0% 0%;
+    padding: 2%;
+    position: relative;
+    top: 20% !important;
+    left: 35% !important;
+    display: none;
+}
+
+.fs{
+    margin-left: -3% !important;
+
+}
+
+.container h2{
+    margin-bottom: 6%;
+    text-align: center;
+}
+
+.Signup input{
+    border: 2pt solid rgb(227, 216, 0);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    
+}
+
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  ul.wrapper{
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper .icon{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1da1f2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #e4405f;
+    color: #fff;
+  }
+  
